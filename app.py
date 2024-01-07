@@ -75,7 +75,7 @@ def detect():
             image_label.pack()
             image_label.place(relx=0.5, rely=0.5, anchor=tk.CENTER)
             filechoice = random.choice([1, 2, 3])
-            file_path = "/Users/vicki/aiproj/midnightfocus/{}.mp3".format(filechoice)
+            file_path = "/Users/vicki/aiproj/midnightfocus/audio/{}.mp3".format(filechoice)
             play_audio(file_path)
             print("Wake up")
             print("Confidence: " + str(dconf.item()))
