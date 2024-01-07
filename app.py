@@ -56,7 +56,7 @@ erase_overlay()
 resetButton = ctk.CTkButton(app, text = "Reset Counter", command = reset_counter, height = 40, width = 120, font = ("monospace", 20), text_color = "white", fg_color = "red")
 resetButton.pack()
 
-model = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5/runs/train/exp4/weights/last.pt', force_reload=True)
+model = torch.hub.load('ultralytics/yolov5', 'custom', path='weights.pt', force_reload=True)
 
 cap = cv2.VideoCapture(0)
 def detect():
